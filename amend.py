@@ -24,7 +24,10 @@ def fix_file(path):
 							    "https://lettingfees.inkleby.com/")
 	contents = contents.replace("http://fonts.googleapis.com/css?family=Raleway:400,300",
 							    "https://fonts.googleapis.com/css?family=Raleway:400,300")
-
+	contents = contents.replace("http://cdnjs.cloudflare.com/ajax",
+							    "https://cdnjs.cloudflare.com/ajax")
+								
+								
 	with open(path, "wb") as f:
 		f.write(contents)
 
