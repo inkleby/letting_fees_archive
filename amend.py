@@ -17,9 +17,18 @@ def fix_file(path):
 	with open(path, "rb") as f:
 		contents = f.read()
 	contents = contents.replace(entry,replace)
+	
+	contents = contents.replace("http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css",
+							    "https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css")
+	contents = contents.replace("http://lettingfees.co.uk/",
+							    "https://lettingfees.inkleby.com/")
+	contents = contents.replace("http://fonts.googleapis.com/css?family=Raleway:400,300",
+							    "https://fonts.googleapis.com/css?family=Raleway:400,300")
+
 	with open(path, "wb") as f:
 		f.write(contents)
 
+		
 def convert_folder(f):
 
 	for s in os.listdir(f):
