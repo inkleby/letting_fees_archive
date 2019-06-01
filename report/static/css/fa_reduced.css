@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fa_reduced';
-  src: url('../font/fa_reduced.eot@28253926');
-  src: url('../font/fa_reduced.eot@28253926') format('embedded-opentype'),
-       url('../font/fa_reduced.woff2@28253926') format('woff2'),
-       url('../font/fa_reduced.woff@28253926') format('woff'),
-       url('../font/fa_reduced.ttf@28253926') format('truetype'),
-       url('../font/fa_reduced.svg@28253926') format('svg');
+  src: url('../font/fa_reduced.eot?28253926');
+  src: url('../font/fa_reduced.eot?28253926#iefix') format('embedded-opentype'),
+       url('../font/fa_reduced.woff2?28253926') format('woff2'),
+       url('../font/fa_reduced.woff?28253926') format('woff'),
+       url('../font/fa_reduced.ttf?28253926') format('truetype'),
+       url('../font/fa_reduced.svg?28253926#fa_reduced') format('svg');
   font-weight: normal;
   font-style: normal;
 }
